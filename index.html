@@ -2,99 +2,53 @@
 <html>
 
 <head>
-    <title>Admin Booking Online</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Customer View</title>
 </head>
 
 <body>
-    <header>
-        <h1>Admin Booking Online</h1>
-        <nav>
-            <ul>
-                <li><a href="#dashboard">Dashboard</a></li>
-                <li><a href="#bookings">Bookings</a></li>
-                <li><a href="#users">Users</a></li>
-                <li><a href="#settings">Settings</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="dashboard">
-            <h2>Dashboard</h2>
-            <p>Welcome to the admin booking online system!</p>
-            <ul>
-                <li>Total bookings: <span id="total-bookings">0</span></li>
-                <li>Active users: <span id="active-users">0</span></li>
-                <li>Upcoming deadlines:</li>
-            </ul>
-            <button id="view-reports">View Reports</button>
-        </section>
-        <section id="bookings">
-            <h2>Bookings</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Start Date</th>
-                        <th>End Date</th>
-                        <th>Location</th>
-                        <th>Attendees</th>
-                        <th>Actions</th>
-                    </tr>
-                </thead>
-                <tbody id="bookings-list"></tbody>
-            </table>
-            <button id="create-booking">Create Booking</button>
-        </section>
-        <section id="users">
-            <h2>Users</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Role</th>
-                        <th>Actions</th>
-                    </tr>
-                </thead>
-                <tbody id="users-list"></tbody>
-            </table>
-            <button id="create-user">Create User</button>
-        </section>
-        <section id="settings">
-            <h2>Settings</h2>
-            <form>
-                <label for="timezone">Timezone:</label>
-                <select id="timezone">
-            <option value="UTC">UTC</option>
-            <option value="America/New_York">America/New York</option>
-            <option value="Europe/London">Europe/London</option>
-            <option value="Asia/Tokyo">Asia/Tokyo</option>
-          </select>
-                <br>
-                <label for="currency">Currency:</label>
-                <select id="currency">
-            <option value="USD">USD</option>
-            <option value="GBP">GBP</option>
-            <option value="EUR">EUR</option>
-            <option value="JPY">JPY</option>
-          </select>
-                <br>
-                <label for="language">Language:</label>
-                <select id="language">
-            <option value="en">English</option>
-            <option value="fr">French</option>
-            <option value="de">German</option>
-            <option value="ja">Japanese</option>
-          </select>
-                <br>
-                <button type="submit">Save Changes</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Admin Booking Online</p>
-    </footer>
-    <script src="script.js"></script>
+    <div style="max-width: 800px; margin: 0 auto; padding: 20px;">
+        <div style="text-align: center; padding: 20px 0; border-bottom: 1px solid #ddd;">
+            <h1>Customer View</h1>
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+            <div style="width: 48%;">
+                <h2>Customer Information</h2>
+                <p><strong>Name:</strong> John Doe</p>
+                <p><strong>Email:</strong> johndoe@example.com</p>
+                <p><strong>Phone:</strong> (123) 456-7890</p>
+            </div>
+            <div style="width: 48%;">
+                <h2>Customer Bookings</h2>
+                <table style="width: 100%; border-collapse: collapse;">
+                    <thead>
+                        <tr>
+                            <th style="padding: 10px; border: 1px solid #ddd; text-align: left; background-color: #f2f2f2; font-weight: bold;">Booking ID</th>
+                            <th style="padding: 10px; border: 1px solid #ddd; text-align: left; background-color: #f2f2f2; font-weight: bold;">Date</th>
+                            <th style="padding: 10px; border: 1px solid #ddd; text-align: left; background-color: #f2f2f2; font-weight: bold;">Time</th>
+                            <th style="padding: 10px; border: 1px solid #ddd; text-align: left; background-color: #f2f2f2; font-weight: bold;">Service</th>
+                            <th style="padding: 10px; border: 1px solid #ddd; text-align: left; background-color: #f2f2f2; font-weight: bold;">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="padding: 10px; border: 1px solid #ddd; text-align: left;">12345</td>
+                            <td style="padding: 10px; border: 1px solid #ddd; text-align: left;">02/15/2022</td>
+                            <td style="padding: 10px; border: 1px solid #ddd; text-align: left;">10:00 AM</td>
+                            <td style="padding: 10px; border: 1px solid #ddd; text-align: left;">Haircut</td>
+                            <td style="padding: 10px; border: 1px solid #ddd; text-align: left;">Confirmed</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px; border: 1px solid #ddd; text-align: left;">12346</td>
+                            <td style="padding: 10px; border: 1px solid #ddd; text-align: left;">02/20/2022</td>
+                            <td style="padding: 10px; border: 1px solid #ddd; text-align: left;">1:00 PM</td>
+                            <td style="padding: 10px; border: 1px solid #ddd; text-align: left;">Spa</td>
+                            <td style="padding: 10px; border: 1px solid #ddd; text-align: left;">Pending</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
